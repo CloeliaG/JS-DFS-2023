@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails</title>
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <script type="module" src="../assets/script/editBook.js"></script>
+</head>
+<body>
+  <main>
+    <a href="/book" type="button" class="btn btn-outline-secondary return-button">Retour</a>
+    <header class="headerList-frosted my-4 offset-4">
+      <h1 id="headerTitle"></h1>
+    </header>
+    <article class="articleStyle">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="titre">Titre</label>
+            <input type="text" class="form-control" id="title">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="auteur">Auteur</label>
+            <input type="text" class="form-control" id="author">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="langue">Langue</label>
+            <input type="text" class="form-control" id="language">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="date">Date de publication</label>
+            <input type="text" class="form-control" id="date">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <label for="description">description</label>
+          <textarea name="" id="description" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-outline-success" id="modif">Modifier</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+
+
+  <div id="toast-success" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body text-white">
+      Le livre a bien été modifié.
+    </div>
+  </div>
+
+  <div id="toast-error" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      Il y a eu une erreur à la modification, veuillez recharger la page.
+    </div>
+  </div>
+</body>
+</html>

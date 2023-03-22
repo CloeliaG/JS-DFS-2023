@@ -1,0 +1,21 @@
+{
+  "name": "exam-dfs-2023",
+  "version": "1.0.0",
+  "description": "js exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Cloelia Guiraud",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.3.1",
+    "uuid": "^9.0.0"
+  }
+}

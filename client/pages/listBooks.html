@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <script type="module" src="./assets/script/listBooks.js"></script>
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+  <main>
+    <header class="headerList-frosted my-4 offset-4">
+      <h1>Liste des livres</h1>
+    </header>
+    <article class="articleStyle">
+      <a href="/addBook" class="btn btn-outline-success">Ajouter un livre</a>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Modifier</th>
+                <th>Suppression</th>
+              </tr>
+            </thead>
+            <tbody id="listBooks">
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div id="toast-success" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body text-white">
+      Le livre a bien été supprimé.
+    </div>
+  </div>
+
+  <div id="toast-error" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      Il y a eu une erreur à la suppression, veuillez recharger la page.
+    </div>
+  </div>
+</body>
+</html>
